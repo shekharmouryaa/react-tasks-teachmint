@@ -135,7 +135,7 @@ function UserDetailPage() {
                     </div>
                 </div>
                 <div className="row">
-                    {posts.map((post) => (
+                    {posts.filter((post) => post.userId === userDetail.id).map((post) => (
                         <div className="col-md-6 col-lg-4" key={post.id}>
                             <div className='card'>
                                 <div class="card-body">
